@@ -13,5 +13,5 @@ RUN echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" >
   && curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
-                     edgetpu \
+                     edgetpu-compiler \
   && rm -rf /var/lib/apt/lists/*
